@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  multiapp:
+    image: natymony/imgmultiweb:latest
+    build:
+      context: https://github.com/natymony/MultiWeb.git
+      dockerfile: Dockerfile
+
+
+  webapi:
+    image: natymony/imgmultiapi:latest
+    build:
+      context: https://github.com/natymony/MultiApi.git
+      dockerfile: Dockerfile
+
+
